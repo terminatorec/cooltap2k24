@@ -1,0 +1,107 @@
+/* Общие стили */
+
+
+.animate__animated.animate__pulse {
+    --animate-duration: 0.03s;
+  }
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #282c35; /* темный фон */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.zone {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Первая зона - счетчик */
+.counter-zone {
+    /* border: 1px solid red; */
+    height: 100px;
+    font-size: 2rem;
+    color: white;
+
+    font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Вторая зона - кнопка */
+.button-zone {
+    display: block;
+    position: relative;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-button {
+    /* width: 80%; */
+    width: 70vw;
+    max-width: 500px;
+    max-height: 500px;
+    height: 70vw;
+    /* padding-bottom: 70vh; */
+    aspect-ratio: 1; /* Сделает кнопку круглой */
+    background: #FF4C4C ; /* 3D-эффект */
+    color: white;
+    font-size: 2rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.2s ease-in-out;
+    position: absolute;
+    /* border: 3px solid black;
+    
+    
+    box-shadow: 6px 6px 12px #160805; */
+    
+    
+}
+
+/* Эффект нажатия */
+.main-button:active {
+    transform: scale(0.9); /* Уменьшение при нажатии */
+}
+
+.main-button:hover {
+    opacity: 0.9;
+}
+
+/* Третья зона - сброс */
+.reset-zone {
+    height: 10%;
+}
+
+.reset-button {
+    width: 100%;
+    background-color: #333333; /* Темный цвет кнопки */
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.reset-button:hover {
+    opacity: 0.9;
+}
