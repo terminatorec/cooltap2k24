@@ -144,3 +144,34 @@ body {
 .reset-button:hover {
     opacity: 0.9;
 }
+
+
+.github-footer {
+    position: fixed; /* Фиксирует блок внизу */
+    right: 0;
+    bottom: 0;
+    width: fit-content;
+    background-color: black; /* Черный фон */
+    text-align: center; /* Центрирование содержимого */
+    padding: 10px 10px; /* Внутренний отступ */
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center; /* Выровнять элементы по вертикали */
+    justify-content: right; /* Выровнять элементы по горизонтали */
+    gap: 10px; /* Добавьте промежуток между элементами */
+  }
+  
+  .github-footer a {
+    color: white; /* Цвет ссылки */
+    text-decoration: none; /* Убирает подчеркивание */
+    display: flex;
+  align-items: center; 
+  }
+  
+  .github-icon {
+    margin: 0 10px; /* Отступы по бокам */
+    color:white;
+    width: 24px; /* Размер иконки */
+  height: 24px; /* Размер иконки */
+  }
