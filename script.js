@@ -4,7 +4,9 @@ const resetButton = document.getElementById("resetButton");
 
 let count = 0;
 
-const buttonSound = document.getElementById('buttonSound');
+// const buttonSound = document.getElementById('buttonSound');
+
+const buttonSound = new Audio("buttonSound.wav");
 
 // Увеличение счетчика
 incrementButton.addEventListener("click", () => {
