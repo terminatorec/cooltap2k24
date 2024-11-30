@@ -8,17 +8,35 @@
 
 
 body {
-    margin: 0;
+    /* margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #282c35; /* темный фон */
+    background-color: #282c35; 
     height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; */
+
+    overflow: hidden;
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем отступы */
+    background-image: url('img/castle.png'); /* Ссылка на ваше изображение */
+    background-size: cover; /* Масштабирование изображения, чтобы покрыть весь экран */
+    background-position: top; /* Центрируем изображение */
+    background-repeat: repeat; /* Избегаем повторения изображения */
+    position: relative;
+    
 }
+
+.myCanvas{
+    position: absolute;
+    top: 0;
+}
+
+
 
 .container {
     display: flex;
     flex-direction: column;
+    /* min-width: 500px; */
     height: 100%;
 }
 
@@ -34,13 +52,18 @@ body {
 .counter-zone {
     /* border: 1px solid red; */
     height: 100px;
-    font-size: 2rem;
-    color: white;
+    font-size: 46px;
+    color: rgb(255, 255, 255);
 
-    font-family: "Bangers", system-ui;
-  font-weight: 400;
-  font-style: normal;
+
+
+
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  font-family: "Jacquard 12", system-ui;
+  font-weight: 300;
+  font-style: normal;
+
+  
 }
 
 /* Вторая зона - кнопка */
@@ -59,7 +82,6 @@ body {
     max-width: 500px;
     max-height: 500px;
     height: 70vw;
-    /* padding-bottom: 70vh; */
     aspect-ratio: 1; /* Сделает кнопку круглой */
     background: #FF4C4C ; /* 3D-эффект */
     color: white;
@@ -70,12 +92,13 @@ body {
     outline: none;
     transition: transform 0.2s ease-in-out;
     position: absolute;
-    /* border: 3px solid black;
-    
-    
-    box-shadow: 6px 6px 12px #160805; */
-    
-    
+}
+
+.photo-button{
+    width: 70vw;
+    max-width: 500px;
+    max-height: 500px;
+    height: 70vw;
 }
 
 /* Эффект нажатия */
@@ -85,6 +108,14 @@ body {
 
 .main-button:hover {
     opacity: 0.9;
+}
+.photo-button:active {
+    transform: scale(0.9); /* Уменьшение при нажатии */
+}
+
+.photo-button:hover {
+    opacity: 0.9;
+    cursor: pointer;
 }
 
 /* Третья зона - сброс */

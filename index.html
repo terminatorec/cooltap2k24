@@ -6,11 +6,11 @@
     <title>Cool tap</title>
 
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Cool tap" />
-<link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Cool tap" />
+    <link rel="manifest" href="/site.webmanifest" />
 
 
     <link rel="stylesheet" href="styles.css">
@@ -19,21 +19,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     
     <!-- подключение confetti -->
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 
     <!-- шрифты -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
 
-
-
-
+<audio id="buttonSound" src="buttonSound.wav" preload="auto"></audio>
 
 </head>
 <body>
+    <!-- <canvas id="myCanvas"></canvas> -->
     <div class="container">
         <!-- Первая зона -->
+        <!-- <img src="1732911078871.png" clas alt=""> -->
+
+        <!-- <iframe allowtransparency="true" style="width: 100vw;height:100vh;background-color: transparent" src="https://app.endlesstools.io/embed/51ef9ca6-85c7-452f-ab74-cc95e5451b23" title="Endless Tools Editor" frameborder="0" allow="clipboard-write; encrypted-media; gyroscope; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+
         <div class="zone counter-zone">
             <h1 id="counter">0</h1>
         </div>
@@ -41,7 +45,8 @@
         <!-- Вторая зона -->
          
              <div class="zone button-zone">
-                 <button class="main-button" id="incrementButton"></button>
+                 <!-- <button class="main-button" id="incrementButton"></button> -->
+                 <img src="img/emerald.png" id="incrementButton" class="photo-button" alt="">
              </div>
 
          
@@ -52,5 +57,6 @@
         </div> -->
     </div>
     <script src="script.js"></script>
+    
 </body>
 </html>
