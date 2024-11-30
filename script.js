@@ -6,7 +6,7 @@ let count = 0;
 
 // const buttonSound = document.getElementById('buttonSound');
 
-const buttonSound = new Audio("buttonSound.wav");
+const buttonSound = new Audio("buttonSound.mp3");
 
 // Увеличение счетчика
 incrementButton.addEventListener("click", () => {
